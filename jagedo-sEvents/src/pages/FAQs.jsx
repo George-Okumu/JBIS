@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import NavBar2 from '../components/NavBar2';
+import Footer from '../components/common/Footer';
 
 const FAQPage = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -60,27 +58,6 @@ const FAQPage = () => {
         }
       ]
     },
-    // {
-    //   category: 'Logistics & Accommodation',
-    //   questions: [
-    //     {
-    //       question: "Do you provide accommodation assistance?",
-    //       answer: "Yes! We have partnerships with nearby hotels offering special rates for summit attendees. Accommodation packages range from KES 3,500-8,000 per night. Contact our logistics team for booking assistance and shuttle service information."
-    //     },
-    //     {
-    //       question: "Is food provided during the event?",
-    //       answer: "Yes, registration includes breakfast on day one, lunch on both days, and networking refreshments during breaks. We cater to various dietary requirements including vegetarian, vegan, halal, and gluten-free options. Please indicate dietary requirements during registration."
-    //     },
-    //     {
-    //       question: "What should I bring to the event?",
-    //       answer: "Bring your photo ID, business cards for networking, notebook and pen (though materials are provided), comfortable shoes for site visits, and your smartphone for our event app. Laptops are recommended for workshop sessions."
-    //     },
-    //     {
-    //       question: "Is parking available at the venue?",
-    //       answer: "Yes, the Nairobi Convention Center offers ample parking space. Parking is free for event attendees - just show your registration confirmation at the gate. We also provide shuttle services from major hotels and transport hubs."
-    //     }
-    //   ]
-    // },
     {
       category: 'Networking & Exhibitions',
       questions: [
@@ -98,19 +75,6 @@ const FAQPage = () => {
         }
       ]
     },
-    // {
-    //   category: 'COVID-19 & Safety',
-    //   questions: [
-    //     {
-    //       question: "What safety measures are in place?",
-    //       answer: "We follow all government health guidelines including temperature checks, hand sanitizing stations throughout the venue, enhanced cleaning protocols, and adequate ventilation systems. Masks are recommended in crowded areas."
-    //     },
-    //     {
-    //       question: "What if someone tests positive before the event?",
-    //       answer: "If you test positive for COVID-19 within 5 days of the event, we'll transfer your registration to our next event at no additional cost, or provide full access to virtual sessions and recordings."
-    //     }
-    //   ]
-    // }
   ];
 
   const filteredFAQs = faqData.map(category => ({
@@ -124,11 +88,6 @@ const FAQPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* NavBar */}
-      <div className="sticky top-0 z-50 bg-white shadow-md">
-        <NavBar2 />
-        <NavBar />
-      </div>
 
       {/* Main Content */}
       <main className="flex-1 py-8 px-4 sm:px-6 lg:px-8">
