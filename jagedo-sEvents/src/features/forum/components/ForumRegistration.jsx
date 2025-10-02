@@ -7,13 +7,18 @@ export default function ForumRegistration() {
         <div className="h-full bg-white border border-gray-200">
           {/* Iframe Container with proper height */}
           <div className="relative h-full">
-            <iframe
-              title="JaGedo Builders Innovation Summit Activation"
-              aria-label="JaGedo Builders Innovation Summit Activation"
-              frameBorder="0"
-              className="w-full h-full border-0"
-              src="https://forms.zohopublic.com/jagedoinnovationslimited1/form/EventRegistrationForm/formperma/5A63lYmtLqGcuFeoCbwzM3lKsAMKFyDQ_RVQOkl_HLo"
-            />
+            <div style={{ width: "100%", overflow: "hidden" }}>
+              <iframe
+                title="JaGedo Builders Innovation Summit Activation"
+                src="https://forms.zohopublic.com/jagedoinnovationslimited1/form/EventRegistrationForm/formperma/5A63lYmtLqGcuFeoCbwzM3lKsAMKFyDQ_RVQOkl_HLo"
+                style={{
+                  height: "500px",
+                  width: "99%",
+                  border: "none",
+                }}
+                frameBorder="0"
+                aria-label="JaGedo Builders Innovation Summit Activation"></iframe>
+            </div>
 
             {/* Loading overlay */}
             <div

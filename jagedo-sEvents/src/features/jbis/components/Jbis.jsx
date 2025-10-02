@@ -64,7 +64,6 @@ export default function Jbis({ setActiveTab }) {
     <>
       <HeroSlideshow slide={heroSlides} image={ForumImage} />
 
-      {/* Event Date and Location Section */}
       <CalendarShow event={{date: "October 17", descr: "One Day Event", venue: "West Park Towers, Westlands"}}/>
 
 
@@ -106,7 +105,7 @@ export default function Jbis({ setActiveTab }) {
 
             {/* Partner logos grid container */}
             <div className="w-full max-w-2xl">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-items-center">
                 {/* Partner 1 - JaGedo */}
                 <div className="flex flex-col items-center justify-center p-4 bg-white rounded-2xl transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-purple-300 hover:shadow-lg w-full max-w-xs">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-gray-50 border-2 flex items-center justify-center overflow-hidden hover:border-purple-300 transition-colors duration-300 mb-3">
@@ -120,7 +119,7 @@ export default function Jbis({ setActiveTab }) {
                 </div>
 
                 {/* Partner 2 - Moringa */}
-                <div className="flex flex-col items-center justify-center p-4 bg-white rounded-2xl transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-purple-300 hover:shadow-lg w-full max-w-xs">
+                {/* <div className="flex flex-col items-center justify-center p-4 bg-white rounded-2xl transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-purple-300 hover:shadow-lg w-full max-w-xs">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-gray-50 border-2 flex items-center justify-center overflow-hidden hover:border-purple-300 transition-colors duration-300 mb-3">
                     <img
                       src={Moringa || "/placeholder.svg"}
@@ -128,7 +127,7 @@ export default function Jbis({ setActiveTab }) {
                       className="w-full h-full object-contain p-2"
                     />
                   </div>
-                </div>
+                </div> */}
 
                 {/* Partner 3 - Placeholder */}
                 <div className="flex flex-col items-center justify-center p-4 bg-white rounded-2xl transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-purple-300 hover:shadow-lg w-full max-w-xs">

@@ -13,8 +13,8 @@ export default function Forum() {
 
   const tabs = [
     {
-      key: "home",
-      label: "Home",
+      key: "about",
+      label: "About",
       content: <Jbis/>,
     },
     {

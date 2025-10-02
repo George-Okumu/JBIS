@@ -8,7 +8,7 @@ const HeroSlideshow = ({ slide, image }) => {
   }
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[300px] lg:h-[400px] xl:h-[700px] overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
         <div
           className="h-full bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-center p-4 sm:p-6 md:p-8 lg:p-16 gap-3 sm:gap-4 md:gap-6"
