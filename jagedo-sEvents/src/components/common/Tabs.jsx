@@ -42,7 +42,7 @@ export default function Tabs({ tabs, activeTab, setActiveTab }) {
         </div>
       </div>
 
-      <div className="mt-[88px]">{tabs.find((tab) => tab.key === currentTab)?.content}</div>
+      <div className="mt-[80px]">{tabs.find((tab) => tab.key === currentTab)?.content}</div>
     </div>
   );
 }

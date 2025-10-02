@@ -23,7 +23,7 @@ export function HeroSection() {
       <img
         src={ForumImage}
         alt="Background Image"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute w-full h-full object-cover no-repeat"
       />
 
       <div className="absolute inset-0 bg-black/70" />
