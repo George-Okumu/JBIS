@@ -50,7 +50,7 @@ const Navbar2 = () => {
   }
 
   const isActive = (path) => {
-    return location.pathname === path
+    return path === '/events'
   }
 
   const handleClick = (item) => {
@@ -66,8 +66,8 @@ const Navbar2 = () => {
   }
 
   return (
-    <header className="bg-transparent fixed top-0 right-0 z-50 p-6 w-full">
-      <div className="container mx-auto flex justify-between items-center py-3 px-6 md:px-12 lg:px-16">
+    <header className="bg-white fixed top-0 z-50 mx-auto w-full">
+      <div className="container mx-auto flex justify-between items-center py-2 px-6 md:px-12 lg:px-16">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link 
@@ -99,7 +99,7 @@ const Navbar2 = () => {
                   <span className="flex items-center">
                     {item.name}
                     {/* Add external link indicator */}
-                    {item.route.startsWith("http") && (
+                    {item.route.includes("events") && (
                       <svg
                         className="w-3 h-3 ml-1 opacity-70 flex-shrink-0"
                         fill="none"

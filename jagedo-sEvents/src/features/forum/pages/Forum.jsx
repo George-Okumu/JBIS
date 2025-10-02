@@ -5,17 +5,17 @@ import Tabs from "../../../components/common/Tabs";
 import ForumRegistration from "../components/ForumRegistration";
 import PastEvents from "../../events/pages/PastEvents";
 import Navbar2 from "../../../components/layout/Navigation";
-import UpcomingEvents from "../../events/pages/UpcomingEvents";
-import ForumSchedule from "../components/ForumSchedule";
+import Jbis from "../../jbis/components/Jbis";
+import FAQPage from "../../../pages/FAQs";
 
 export default function Forum() {
     const [activeTab, setActiveTab] = useState("register");
 
   const tabs = [
     {
-      key: "program schedule",
-      label: "Program Schedule",
-      content: <ForumSchedule />,
+      key: "home",
+      label: "Home",
+      content: <Jbis/>,
     },
     {
       key: "register",
@@ -23,14 +23,14 @@ export default function Forum() {
       content: <ForumRegistration setActiveTab={setActiveTab}/>,
     },
     {
-      key: "upcoming",
-      label: "Upcoming Events",
-      content: <UpcomingEvents />,
-    },
-    {
       key: "past",
       label: "Past Events",
       content: <PastEvents />,
+    },
+    {
+      key: "faq",
+      label: "FAQS",
+      content: <FAQPage/>,
     },
   ];
 

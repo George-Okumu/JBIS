@@ -5,59 +5,75 @@ export default function ForumSchedule() {
   const schedule = [
     {
       time: "9:00 - 9:30 am",
-      title: "Arrival and Registration",
+      title: "ARRIVAL AND REGISTRATION",
     },
     {
-      time: "9:30 - 9:45 am",
-      title: "Welcome and Programme overview",
+      time: "9:30 - 10:30 am",
+      title: "COFFEE AND NETWORKING SESSION",
     },
     {
-      time: "9:45 - 10:15 am",
-      title: "JaGedo Introduction",
+      time: "10:30 - 10:45 am",
+      title: "M.C WELCOME THE GUEST AND PROGRAMME OVERVIEW",
     },
     {
-      time: "10:15- 11:30 am",
-      title: "Panel Discussion",
+      time: "10:45- 11:15 am",
+      title: "JAGEDO INTRODUCTION & PRODUCT DEMO",
     },
     {
       time: "11:30- 11:45 am",
       title: "Speed Networking (Guests introduce themselves)",
     },
     {
-      time: "11:45 - 12:00 Noon",
-      title: "Closing Remarks",
+      time: "11:15 - 11:45 am",
+      title: "PANEL DISCUSSION",
+    },
+    {
+      time: "11:45 - 12 Noon",
+      title: "GUEST SPEAKER",
     },
     {
       time: "12 Noon",
-      title: "Coffee and Networking",
+      title: "CLOSING REMARKS , GUEST LEAVE AT THEIR OWN PLEASURE",
     },
     {
       time: "2:00 - 2:30 pm ",
-      title: "Arrival and Registration",
+      title: "ARRIVAL AND REGISTRATION",
     },
     {
       time: "2:30 - 2:45 pm",
-      title: "Welcome and Programme overview",
+      title: "M.C WELCOME GUEST AND PROGRAMME OVERVIEW",
     },
     {
       time: "2:45 - 3:15 pm",
-      title: "JaGedo Introduction",
+      title: "NETWORKING SESSION & WELCOME BITTINGS",
     },
     {
-      time: "3:15- 4:30 pm",
-      title: "Panel Discussion",
+      time: "3:15- 3:30 pm",
+      title: "JAGEDO INTRODUCTION & PRODUCT DEMO",
     },
     {
-      time: "4:30- 5:45 pm",
-      title: "Speed Networking (Guests introduce themselves)",
+      time: "3:30- 4:00 pm",
+      title: "PANEL DISCUSSION",
     },
     {
-      time: "5:45- 6:00 pm",
-      title: "Closing Remarks",
+      time: "4:00- 4:15 pm",
+      title: "ICE BREAKER",
+    },
+    {
+      time: "4:15- 4:45 pm",
+      title: "PANEL DISCUSSION",
+    },
+    {
+      time: "4:45- 5:30 pm",
+      title: "GUEST SPEAKERS",
+    },
+    {
+      time: "5:30- 6:00 pm",
+      title: "CLOSING REMARKS",
     },
     {
       time: "6:00- 8:00 pm",
-      title: "Trivia Night and Cocktail Hour",
+      title: "TRIVIA NIGHT AND COCKTAILS",
     },
   ];
 
@@ -78,6 +94,9 @@ export default function ForumSchedule() {
         <div className="max-w-4xl mx-auto">
           <header className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Program</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              One day of learning, networking, and innovation in the construction industry.
+            </p>
             <div className="flex items-center justify-center mt-4 space-x-6 text-sm text-gray-600">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-1" />
@@ -96,7 +115,7 @@ export default function ForumSchedule() {
 
           <article className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden px-6 py-10">
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-10 text-center">
+              <h3 className="text-2xl font-bold text-gray-800 mb-10 text-center uppercase">
                 Morning Session
               </h3>
               <div className="relative border-l-2 border-blue-100 ml-4 pl-6">
@@ -111,7 +130,7 @@ export default function ForumSchedule() {
             </div>
 
             <div className="mt-20">
-              <h3 className="text-2xl font-bold text-gray-800 mb-10 text-center">
+              <h3 className="text-2xl font-bold text-gray-800 mb-10 text-center uppercase">
                 Evening Session
               </h3>
               <div className="relative border-l-2 border-purple-100 ml-4 pl-6">
@@ -127,9 +146,6 @@ export default function ForumSchedule() {
           </article>
         </div>
       </section>
-
-    <Footer/>
-
     </>
   );
 }

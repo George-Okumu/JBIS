@@ -1,15 +1,13 @@
-import { Link } from "react-router-dom";
-import { Calendar, MapPin } from "lucide-react";
-import Button from "../../../components/common/Button";
 
 import JaGedoLogo from "../../../assets/Japageologo.webp"
 import Moringa from "../../../assets/Moringa.png";
 import Fisibo from "../../../assets/fisibo.jpeg";
 import Footer from "../../../components/common/Footer";
-
-import Construction1 from "../../../assets/ConstructionImage.jpeg";
-
+import CalendarShow from "../../../components/common/CalendarShow";
 import HeroSlideshow from "../../../components/layout/hero-slideshow";
+import ForumSchedule from "../../forum/components/ForumSchedule"
+import ForumImage from "../../../assets/forum.jpeg"
+
 
 const whoShouldAttend = [
   {
@@ -55,8 +53,8 @@ const whoShouldAttend = [
 ];
 
 const heroSlides = {
-  title: "JBIS: JaGedo Builders Innovation Summit",
-  subtitle: "Shaping the Future of African Construction Through Technology & Innovation",
+  title: "JaGedo Builders Innovation Summit (JBIS)",
+  subtitle: "ACTIVATION",
   description:
     "Join 500+ industry leaders and innovators reshaping construction's future through cutting-edge technology.",
 };
@@ -64,98 +62,11 @@ const heroSlides = {
 export default function Jbis({ setActiveTab }) {
   return (
     <>
-      <HeroSlideshow slide={heroSlides} image={Construction1} />
-
-      {/* Call to Action Section */}
-      <section className="py-8 sm:py-10 md:py-12 px-4 md:px-8 bg-white border-b border-gray-100">
-        <div className="max-w-4xl mx-auto">
-          <header className="text-center mb-6 sm:mb-8">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-2">
-              Ready to Join the Innovation?
-            </h1>
-            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-              Don't miss this opportunity to be part of Kenya's premier construction innovation
-              summit.
-            </p>
-          </header>
-
-          {/* Enhanced CTA Buttons - Using Button Component */}
-          <div onClick={() => setActiveTab("register")} className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center w-full max-w-md sm:max-w-lg mx-auto">
-            <div className="w-full sm:w-auto flex justify-center">
-              <Button className="w-full sm:w-48 md:w-56 text-white">
-                <span className="flex items-center justify-center text-sm sm:text-base">
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    />
-                  </svg>
-                  <span className="whitespace-nowrap">Register Now</span>
-                </span>
-              </Button>
-            </div>
-
-            <div onClick={() => setActiveTab("sponsor")} className="w-full sm:w-auto flex justify-center">
-              <Button className="w-full sm:w-48 md:w-56 text-white" onClick={() => setActiveTab("sponsor")}>
-                <span className="flex items-center justify-center text-sm sm:text-base">
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
-                    />
-                  </svg>
-                  <span className="whitespace-nowrap">Become a Sponsor</span>
-                </span>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSlideshow slide={heroSlides} image={ForumImage} />
 
       {/* Event Date and Location Section */}
-      <section className="px-4 md:px-20 lg:px-40 py-6 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div className="max-w-4xl mx-auto">
-          <article className="bg-white rounded-2xl shadow-lg p-4 md:p-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-4">
-              Mark Your Calendar
-            </h2>
+      <CalendarShow event={{date: "October 17", descr: "One Day Event", venue: "West Park Towers, Westlands"}}/>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-              {/* Date Section */}
-              <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
-                  <Calendar className="text-white" size={24} />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Event Date</h3>
-                <p className="text-xl font-bold text-blue-600 mb-1">October 17 - 18, 2025</p>
-                <p className="text-gray-600 text-sm">Two Days of Innovation</p>
-              </div>
-
-              {/* Location Section */}
-              <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
-                  <MapPin className="text-white" size={24} />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Location</h3>
-                <p className="text-xl font-bold text-green-600 mb-1">Nairobi, Kenya</p>
-                <p className="text-gray-600 text-sm">Venue TBD</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
 
       {/* About Us Section */}
       <section className="px-6 md:px-20 lg:px-36 py-10 bg-white">
@@ -271,6 +182,8 @@ export default function Jbis({ setActiveTab }) {
           </div>
         </div>
       </section>
+
+      <ForumSchedule/>
 
       <Footer />
     </>

@@ -25,6 +25,7 @@ const RegistrationPage = () => {
           </div>
         </div>
       </div>
+
       
       {/* Footer */}
       <Footer />
