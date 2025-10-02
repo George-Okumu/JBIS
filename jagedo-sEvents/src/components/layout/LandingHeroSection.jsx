@@ -5,7 +5,7 @@ import ForumImage from "../../assets/forum.jpeg";
 
 export function HeroSection() {
   return (
-    <div className="relative h-screen flex items-center justify-center">
+    <div className="relative h-screen pt-20 flex items-center justify-center">
       {/* <video
         autoPlay
         loop
