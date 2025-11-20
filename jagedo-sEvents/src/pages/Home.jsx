@@ -66,14 +66,14 @@ const partners = ["JaGedo"]
 const whoShouldAttend = [
   {
     icon: "🏗️",
-    title: "Builders & Contracts",
+    title: "Builders",
     description:
       "Construction, fundis, professionals and Hardware Owners looking to stay ahead of industry trends and connect with peers.",
     highlights: ["Latest construction techniques", "Industry best practices", "Networking opportunities"],
   },
   {
     icon: "💻",
-    title: "•	Technology and software providers in construction",
+    title: "•	Technology enthusiasts.",
     description:
       "Tech innovators, software developers, and digital solution providers interested in construction technology and digital transformation.",
     highlights: ["Construction tech innovations", "Digital solutions showcase", "Tech networking sessions"],
