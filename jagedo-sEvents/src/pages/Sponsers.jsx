@@ -49,72 +49,69 @@ const SponsorsPage = () => {
     
     {
       title: "Platinum Sponsor",
-      price: "KES 250,000",
+      price: "KES 1000, 000",
       color: "from-gray-400 to-gray-600",
       textColor: "text-gray-900",
       bgColor: "bg-gray-50",
       borderColor: "border-gray-200",
       features: [
-        "Top-tier brand exposure: Prime logo placement on all event materials, banners, stage backdrops, and digital campaigns.",
-        "Speaking opportunity: Keynote or panel speaking slot for a company executive.",
-        "Exhibition space: Premium booth location with double-size space.",
-        "Lead generation: Full access to attendee list with contact info (opt-in)",
-        "Media visibility: Featured in all press releases, interviews, and media coverage.",
-        "Social media spotlight: Dedicated posts before, during, and after the event.",
-        "VIP passes: 10 passes, including access to exclusive networking lounges",
-        "Launch privileges: Priority slot for any product/service launch at the summit.",
-        "Branded content: Option to insert flyers, brochures, or gifts into summit bags.",
+        "Top-tier brand exposure: Prime logo placement on all event platforms",
+        "Keynote/Panel for senior executive.",
+        "Premium exhibition space: 3m x 9m booth (3 tables, 5 chairs)",
+        "Full attendee list (opt-in) for lead generation.",
+        "Media visibility: Featured in all press, interviews, and digital coverage.",
+        "Social media spotlight: Dedicated pre, during and post-event posts.",
+        "4 VIP pass + 5 general access passes.",
+        "Launch privileges for products/services.",
+        "Branded content in summit bags.",
       ]
     },
     {
       title: "Gold Sponsor",
-      price: "KES 125,000",
+      price: "KES 750,000",
       color: "from-yellow-500 to-yellow-800",
       textColor: "text-yellow-900",
       bgColor: "bg-yellow-50",
       borderColor: "border-yellow-300",
       features: [
-        "High-Impact Visibility:",
-        "Logo placement: On event backdrops, digital banners, and select print materials.",
-        "Panel participation: Invitation for one company rep to join a discussion panel.",
-        "Exhibition booth: Standard booth in high-traffic area.",
-        "Lead generation: Access to post-event attendee summary (opt-in).",
-        "Media inclusion: Mention in press releases and post-event wrap-ups.",
-        "Social media shoutouts: Featured in sponsor carousel and thank-you posts.",
-        "VIP passes: 35 passes with access to select networking sessions.",
-        "Product display: Option to showcase materials or demos at booth."
+        "Logo placement on event backdrops and digital platforms.",
+        "Panel participation for 1 representative.",
+        "Standard booth: 3m x 6m (2 tables, 3 chairs).",
+        "Post event attendee summary (opt-in).",
+        "Media inclusion in press releases.",
+        "Social media shoutouts.",
+        "3 VIP passes + 5 general access passes.",
+        "Product demo/display option."
       ]
     },
     {
       title: "Silver Sponsor",
-      price: "KES 75,000",
-      color: "from-blue-500 to-blue-700",
-      textColor: "text-blue-900",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-200",
-      features: [
-        "Brand Presence with Value:",
-        "Logo display: On select banners and digital platforms.",
-        "Exhibition space: Standard booth.",
-        "Lead support: Opportunity to collect leads via booth engagement.",
-        "Mention in programs: Listed in digital program and website.",
-        "Social media: Group mention with fellow silver sponsors.",
-        "Event access: 20 VIP passes and general networking access"
-      ]
-    },
-    {
-      title: "Bronze Sponsor",
-      price: "KES 25,000",
+      price: "KES 500,000",
       color: "from-yellow-300 to-yellow-600",
       textColor: "text-yellow-900",
       bgColor: "bg-yellow-50",
       borderColor: "border-yellow-200",
       features: [
-        "Entry-Level Exposure:",
-        "Name listing: On website and event program",
-        "Exhibition space: Shared exhibition table or basic booth",
-        "Networking: 10 event pass with general access.",
-        "Social media: Group mention pre- and post-event.",
+        "Logo display on selected banner and platforms.",
+        "Standard booth: 3m x 3m (1 table, 2 chairs).",
+        "Lead collection via booth engagement.",
+        "Listing in event program and website.",
+        "Social media group mentions.",
+        "2 VIP passes + 5 general access passes."
+      ]
+    },
+        {
+      title: "Bronze Sponsor",
+      price: "KES 250,000",
+      color: "from-blue-500 to-blue-700",
+      textColor: "text-blue-900",
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-200",
+      features: [
+        "Name listing on website and program",
+        "1 VIP pass + 5 general access passes",
+        "Social media group mentions",
+        "Booth: 3m x 3m (1 table, 2 chairs)",
       ]
     },
   ];
